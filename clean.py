@@ -39,10 +39,10 @@ def sort_files(original_path):
 
         if os.path.isdir(file_path):
           
-            if file in all_folders.keys():
+            if file in all_folders:
                 continue
             
-            if len(os.listdir(file_path)) == 0:
+            if not os.listdir(file_path):
                 os.rmdir(file_path)
                 continue
 
