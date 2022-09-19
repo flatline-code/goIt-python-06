@@ -23,7 +23,7 @@ def normalize(string):
         
     return normalized_string.translate(TRANS)
 
-def sort_files(original_path):
+def sort_files(original_path=sys.argv[1]):
     all_folders = {
       'images': ['jpeg', 'png', 'jpg', 'svg'],
       'documents': ['doc', 'docx', 'txt', 'pdf', 'xlsx', 'pptx'],
